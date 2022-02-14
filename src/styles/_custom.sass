@@ -1,0 +1,283 @@
+.contenedor-imagen
+  position: relative
+  padding: 20px
+  *
+    position: relative
+  &::before
+    position: absolute
+    content: ''
+  &.position-top-right
+    &::before
+      top: 0
+      right: 0
+      left: 60%
+      bottom: 60%
+  &.position-bottom-left
+    &::before
+      top: 60%
+      right: 60%
+      left: 0
+      bottom: 0
+  &.color-primario
+    &::before
+      background-color: $color-primario
+
+.contenedor-circular
+  border-radius: 100%
+  border: 3px solid
+  // min-height: 220px
+  font-size: 13.5px
+  text-align: justify
+  p
+    line-height: 13.5px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 105px
+  &.green
+    border-color: #E5F3CB
+    background-color: #C6DAA4
+
+.tema1-background
+  background-image: url("../assets/curso/tema1-background.svg")
+  background-repeat: no-repeat
+  background-size: cover
+.tema2-background
+  background-image: url("../assets/curso/tema2-background.svg")
+  background-repeat: no-repeat
+  background-size: cover
+.tema3-background
+  background-image: url("../assets/curso/tema3-background.png")
+  background-repeat: no-repeat
+  background-size: cover
+.tema8-background
+  background-image: url("../assets/curso/tema8-background.svg")
+  background-repeat: no-repeat
+  background-size: cover
+
+.title-nuevo
+  color: #78B632
+  max-width: auto
+  font-size: 1.25em
+  font-weight: 900
+  > span
+    line-height: 1.8
+    border-bottom: 1px solid #78B632
+
+.contenedor-especial
+  border-radius: 40px
+  background-image: url("../assets/curso/tema2-img9.svg")
+  background-size: 100% 100%
+  background-repeat: no-repeat
+
+.tarjeta.color-primario--claro
+  background-color: mix(#ffffff, $color-primario,  80%)
+
+.slyder-e
+  background-image: url("../assets/curso/tema3-slyder-background.png")
+  background-size: cover
+.slyder__btn
+  background-color: white
+
+.table-especial-cuerpo
+  table
+    tbody
+      tr
+        &.color-acento-contenido
+          td
+            background-color: #FDFEF9
+            border-color: white
+            p
+              a
+                color: $color-acento-contenido
+        &.color-acento-botones
+          td
+            background-color: mix(#fff, $color-acento-botones, 80%)
+            border-color: white
+
+.table--new-row
+  border-bottom: 4px solid
+
+.contenedor--texto
+  position: relative
+  *
+    position: relative
+  &::before
+    position: absolute
+    content: ''
+    top: 15%
+    bottom: 15%
+    left: 0
+    right: 30%
+    background-color: #EAF1F4
+
+.bloque-texto-a.color-secundario
+  background-color: #ECECEC
+  &::before
+    background-color: #327FA5
+
+.contenedor-imagen-5
+  position: relative
+  *
+    position: relative
+  &::before
+   position: absolute
+   content: ''
+   left: 100px
+   right: 40%
+   top: 0
+   bottom: 10%
+   background-color: #EAF1F4
+
+.box-soft
+  background-color: #FFF3DF
+.box-soft-green
+  background-color: #EDF3E3
+
+.tabs-a__content-item
+  .tarjeta.color-acento-botones
+    background: rgb(255,243,223)
+    background: linear-gradient(180deg, rgba(255,243,223,1) 0%, rgba(255,255,255,1) 77%)
+    color: $color-sistema-texto
+    p
+      color: $color-sistema-texto
+
+.no-border
+  &.top-left
+    border-top-left-radius: 0
+  &.top-right
+    border-top-right-radius: 0
+  &.bottom-left
+    border-bottom-left-radius: 0
+  &.bottom-right
+    border-bottom-right-radius: 0
+
+.tarjeta.tarjeta--naranja
+  background: rgb(255,243,223)
+  background: linear-gradient(180deg, rgba(255,243,223,1) 0%, rgba(255,255,255,1) 42%)
+.tarjeta.tarjeta--naranja-2
+  background: rgb(255,243,223)
+  background: linear-gradient(180deg, rgba(255,243,223,1) 0%, rgba(255,253,252,1) 100%)
+.tarjeta.tarjeta--gris-especial
+  background-color: white
+  background-image: url("../assets/curso/tema6-background1.svg")
+  background-size: cover
+  background-repeat: no-repeat
+
+.color-texto-naranja
+  color: #F59325
+  font-size: 1.4em
+  font-weight: 900
+.color-texto-verde
+  color: #8BB748
+  font-size: 1.4em
+  font-weight: 900
+
+.tabs-b.especial
+  border-bottom: 1px solid #FFE1AE
+  .tabs-b__header
+    .tabs-b__tab
+      border: none
+      background: transparent
+      padding: 5px
+      &.tabs-b__tab--active
+        border: none!important
+      .tabs-b__tab__icon
+        margin-bottom: 0
+        width: 80px
+
+.tarjeta.tarjeta-slide
+  height: auto
+  &.color-acento-botones
+    background: mix(#fff, $color-acento-botones, 80%)
+  &.color-acento-contenido
+    background: mix(#fff, $color-acento-contenido, 80%)
+  &.color-primario
+    background: mix(#fff, $color-primario, 80%)
+  &.color-secundario
+    background: mix(#fff, $color-secundario, 80%)
+  .tarjeta-slide__contenedor
+    .tarjeta-slide__contenido
+      p
+        color: $color-sistema-texto
+        font-size: 13px
+
+.cajon.color-acento-contenido
+  background-color: #F2F6E9
+
+.caja-texto-subrayado
+  background: #F8F8F8
+  border: 3px dashed #327FA5
+
+.slyder-f__btn
+  i
+    color: #FFBE32
+
+.border-especial
+  &.top
+    border-top: 2px solid gray
+  &.bottom
+    border-bottom: 2px solid gray
+
+.slyder-a__item
+  padding: 30px 90px
+
+.tarjeta.tarjeta--azul-2
+  background-color: #E6EEF3
+
+.slyder-a__tipo-a .slyder-a__bullets
+  bottom: 10px
+
+.caja.verde--clara
+  background: rgb(242,246,233)
+  background: linear-gradient(180deg, rgba(242,246,233,1) 0%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 100%)
+
+.caja.naranja--clara.horizontal
+  background: rgb(255,243,223)
+  background: linear-gradient(90deg, rgba(255,243,223,1) 0%, rgba(255,243,223,1) 50%, rgba(255,255,255,1) 81%)
+
+.tarjeta.tarjeta--naranja
+  background: rgb(255,243,223)
+  background: linear-gradient(180deg, rgba(255,243,223,1) 0%, rgba(255,255,255,1) 60%)
+
+.tarjeta.tarjeta--verde
+  background: #F2F6E9
+
+
+.tarjeta-avatar-b
+  .tarjeta.tarjeta--verde
+    margin-left: 0
+    margin-right: -5%
+    padding-left: 0
+    padding-right: 5%
+  .tarjeta-avatar-b__img
+    min-width: 10%
+    max-width: 10%
+
+.caja.azul-clara
+  border-top-left-radius: 40px
+  border-top-right-radius: 40px
+  background-color: #E6EEF3
+
+
+.linea-tiempo-d__item--selected
+  .col
+    .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+      padding: 20px
+      background: rgb(230,238,243)
+      background: linear-gradient(180deg, rgba(230,238,243,1) 43%, rgba(255,255,255,1) 90%)
+
+.image-click
+  transition: all 0.5s ease-out;
+  cursor: pointer
+  opacity: 0.8
+  &:hover
+    opacity: 1
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important
+    padding: 20px
+
+.pasos-a.color-acento-botones .pasos-a__numero::after
+  border-left-color: $color-primario
+.pasos-a.color-acento-botones .pasos-a__linea__esquina__linea
+  border-color: $color-primario
+.pasos-a.color-acento-botones .pasos-a__linea .hor-line
+  border-color: $color-primario
