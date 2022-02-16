@@ -6,7 +6,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 1
-      h1 Producción pecuaria
+      h4 Producción pecuaria
 
     .row.justify-content-center.mb-5
       .col-lg-7
@@ -42,6 +42,7 @@
       | Actividades destacadas de la producción pecuaria:
 
     .row.mb-5
+  
       .col-md-6.col-lg.mb-5.mb-lg-0
         .tarjeta-avatar
           img(src='@/assets/curso/tema1-img7.svg')

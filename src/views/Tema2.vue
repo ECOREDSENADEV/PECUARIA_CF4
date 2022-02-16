@@ -9,7 +9,8 @@
       h1 Sistema de producción pecuario
 
     .row.justify-content-center.mb-5
-      .col-lg-5
+      .col-lg-2
+      
         .contenedor-imagen.position-bottom-left.color-primario.mb-4.mb-lg-0
           figure
             img(src="@/assets/curso/tema2-img1.jpg")
